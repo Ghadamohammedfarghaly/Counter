@@ -1,0 +1,159 @@
+<!--بسم الله الرحمن الرحيم والصلاه والسلام على اشرف المرسلين سيدنا محمد عليه وعلى اله وصحبه اجمعين-->
+<html>
+    <head>
+        <title>Relax</title>
+        <link rel="icon" href="star-svgrepo-com.svg"/>
+
+        <!--css styles-->
+        <style>
+           body{
+            background-color:rgb(135, 126, 150);
+            font-weight:bold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           }
+           h3{
+            text-align:center;
+            text-decoration:underline wavy white;
+            word-spacing:5px;
+            padding:20px;
+            font-size:20px;
+            color:aqua;
+           }
+           h3::first-letter{
+            color:chartreuse;
+           }
+           h3:hover{
+            opacity:0.6;
+            color:chartreuse;
+            font-style:italic;
+           }
+           #div1{
+            height:400px;
+            width:400px;
+            position:absolute;
+            top:140px;
+            left:450px;
+            border:5px groove;
+            border-color:chartreuse brown brown chartreuse;
+            border-radius:180px 40px 180px 40px;
+            background-color:aqua;
+           }
+           #div2{
+            height:50px;
+            width:200px;
+            position:absolute;
+            top:80px;
+            left:100px;
+            background-color:white;
+            color:brown;
+            border-radius:32px 16px 32px 16px;
+            border:2px chartreuse ridge;
+            text-align: center;
+            line-height:45px;     /*يعنى حلت  مشكله*/
+           }
+           #div2:hover{
+            border-color:brown chartreuse brown  chartreuse;
+           }
+           #in1{
+            height:50px;
+            width:200px;
+            position:absolute;
+            top:170px;
+            left:100px;
+            background-color:brown;
+            color:white;
+            border-radius:30px;
+            border:2px chartreuse ridge;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+           }
+           #in1:hover{
+            background-color:white;
+            color:brown;
+           }
+           #in2{
+            height:50px;
+            width:200px;
+            position:absolute;
+            top:240px;
+            left:100px;
+            background-color:brown;
+            color:white;
+            border-radius:30px;
+            border:2px chartreuse ridge;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+           }
+           #in2:hover{
+            background-color:white;
+            color:brown;
+           }
+           img{
+            height:30px;
+            width:30px;
+            position:absolute;
+            top:28px;
+           }
+           #in00{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+           }
+        </style>
+    </head>
+    <body onclick="document.body.style.backgroundColor='brown';" ondblclick="document.body.style.backgroundColor='rgb(135, 126, 150)'"> <!--js-->
+        <h3 id="h3">Mention Your God</h3>
+        <div id="div1">
+           <div id="div2">
+            &hearts; الله اكبر&hearts;
+           </div>
+           <input type="button" value="Mention" id="in1" onclick="Counter();"/> <!--js-->
+           <input type="button" value="Reset" id="in2" onclick="Reset();"/> <!--js -->
+           <input type="button" value="Mode" id="in00" onclick="night();" ondblclick="morning();"/>  <!--js-->
+        </div>
+
+        <!-- js codes-->
+        <script>
+            
+            var count=0;
+            function Counter(){
+                window.div2.innerHTML=count++;
+            }
+            function Reset(){
+                window.div2.innerHTML=' ';
+                count=0;
+            }
+
+            function message(){
+                window.alert('💞تسطيع مادمت تسعى💞');
+            }
+            var timer=setTimeout(message,10000);
+
+            var timer2= setTimeout(
+            function (){
+                window.h3.innerHTML+='<img src="in-love-emoji-emoticon-feeling-face-smile-svgrepo-com.svg"/>';
+            },5000);
+            
+            window.in00.style.height='50px';
+            window.in00.style.width='50px';
+            window.in00.style.borderRadius='25px';
+            window.in00.style.backgroundColor='brown';
+            window.in00.style.color='white';
+            window.in00.style.position='absolute';
+            window.in00.style.top='340px';
+            window.in00.style.left='15px';
+           
+            function night(){
+                 window.in00.value='ON';
+                 window.div1.style.backgroundColor='black';
+            }
+            function morning(){
+                 window.in00.value='OFF';
+                 window.div1.style.backgroundColor='aqua';     
+            }
+            /*
+             this is acounter app 
+             that help you
+             mention your gog
+            */
+        </script>
+        <!--الحمد لله-->
+        <!--ghada mohammed-->
+    </body>
+</html>
